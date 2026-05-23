@@ -4,5 +4,6 @@ backend/node_modules
 frontend/.env
 backend/.env
 
+
 dist
 build
