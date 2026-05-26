@@ -5,5 +5,5 @@ frontend/.env
 backend/.env
 
 demo.txt
-dist
-build
+/dist
+/build
