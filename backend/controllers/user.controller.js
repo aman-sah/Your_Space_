@@ -1,5 +1,5 @@
-import user from "../models/user.model.js";
-import { uploadToCloudinary } from " ../utils/uploadToCloudinary.js";
+import User from "../models/user.model.js";
+import { uploadToCloudinary } from "../utils/uploadToCloudinary.js";
 
 //get Profile
 export const getProfile = async (req,res)=>{
@@ -23,7 +23,7 @@ export const getProfile = async (req,res)=>{
 
 export const getPublicProfile=async(req,res)=>{
     try {
-        const user =await User.findById(req.params.id).select("name profilePic role createAt");
+        const user =await User.findById(req.params.id).select("name profilePic role createdAt");
         if(!user){
             return res.status(404).json({
                 success: false,
