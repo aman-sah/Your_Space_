@@ -1,1 +1,13 @@
-//1:01
+//1:04
+
+http://localhost:5000/api/auth/register
+
+{
+  "name":"HDS",
+ "email":"amansah2181@gmail.com",
+ "password":"123123123",
+ "role":"admin"
+}
+
+
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTQ5MmM3NmFiMTIyYWI1OGFjNGMxZiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTc3MjM5MSwiZXhwIjoxNzgwMzc3MTkxfQ.l4kzBufEHJqIPpIOvv4F0fhFSYsB6WbSzKBwNg9lN1A
