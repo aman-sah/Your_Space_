@@ -4,6 +4,6 @@ backend/node_modules
 frontend/.env
 backend/.env
 
-/demo.txt
+demo.txt
 dist
 build
