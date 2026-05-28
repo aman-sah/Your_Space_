@@ -453,6 +453,12 @@ export const getPropertyCounts = async (req, res) => {
             counts: formattedCounts
         });
     }
+    catch (error) {
+        res.status(500).json({
+            success: false,
+            message: "Internal server error while fetching counts",
+            error: error.message,
+        });
+    }
 
-    
 }
