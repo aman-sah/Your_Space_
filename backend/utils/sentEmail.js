@@ -16,15 +16,7 @@ const sendEmail= async(options)=>{
             htmlContent:options.message
         };
 
-         const response = await fetch("https://api.brevo.com/v3/smtp/email", {
-            method: "POST",
-            headers:{
-                "api-key":BREVO_API_KEY,
-                "Content-Type": "application/json",
-                "Accept": "Application/json",
-            },
-            body:JSON.stringify(data),
-         });
+         
 
          const result = await response.json();
          if(response.ok){
