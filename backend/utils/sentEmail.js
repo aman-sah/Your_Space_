@@ -6,7 +6,15 @@ const sendEmail= async(options)=>{
             throw new Error("Missing Email API key");
         }
 
-       
+        const data ={
+            sender:{
+                name: "Real Estate Platform",
+                email:process.env.EMAIL_USER
+            },
+            to:[{email:options.email}],
+            subject: options.subject,
+            htmlContent:options.message
+        };
 
          const response = await fetch("https://api.brevo.com/v3/smtp/email", {
             method: "POST",
